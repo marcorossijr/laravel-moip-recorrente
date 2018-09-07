@@ -19,7 +19,7 @@ class Payment extends Request
      */
     public function find($signature_code)
     {
-        return $this->get($this->env.'/assinaturas/v1/subscriptions/' . $signature_code . '/payments');
+        return $this->get($this->env.'/assinaturas/v1/invoices/' . $signature_code . '/payments');
     }
 
     /**
